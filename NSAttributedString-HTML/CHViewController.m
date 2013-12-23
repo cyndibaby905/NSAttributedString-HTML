@@ -7,6 +7,9 @@
 //
 
 #import "CHViewController.h"
+#import "NSAttributedString+HTML.h"
+
+
 
 @interface CHViewController ()
 
@@ -18,7 +21,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    UITextView *textView = [[UITextView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:textView];
+    NSString* html=[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"] encoding:NSUTF8StringEncoding error:NULL];
+	NSLog(@"%@",html);
+    textView.layer.borderWidth = 2;
+    textView.attributedText = [NSAttributedString attributedStringWithHTML:html];
 }
 
 - (void)didReceiveMemoryWarning

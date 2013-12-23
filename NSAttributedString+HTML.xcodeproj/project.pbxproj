@@ -22,6 +22,7 @@
 		7705FF5618674FCF00C28F9B /* NSAttributedString_HTMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7705FF5518674FCF00C28F9B /* NSAttributedString_HTMLTests.m */; };
 		7705FF60186750B100C28F9B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7705FF5F186750B100C28F9B /* libxml2.dylib */; };
 		7705FF641867511100C28F9B /* NSAttributedString+HTML.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7705FF631867511100C28F9B /* NSAttributedString+HTML.mm */; };
+		77F5AFD4186895C1001CD950 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 77F5AFD3186895C1001CD950 /* test.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		7705FF5F186750B100C28F9B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		7705FF621867511100C28F9B /* NSAttributedString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+HTML.h"; sourceTree = "<group>"; };
 		7705FF631867511100C28F9B /* NSAttributedString+HTML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSAttributedString+HTML.mm"; sourceTree = "<group>"; };
+		77F5AFD3186895C1001CD950 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		7705FF2D18674FCF00C28F9B /* NSAttributedString+HTML */ = {
 			isa = PBXGroup;
 			children = (
+				77F5AFD3186895C1001CD950 /* test.html */,
 				7705FF611867511100C28F9B /* NSAttributedString+HTML */,
 				7705FF3618674FCF00C28F9B /* CHAppDelegate.h */,
 				7705FF3718674FCF00C28F9B /* CHAppDelegate.m */,
@@ -246,6 +249,7 @@
 			files = (
 				7705FF4318674FCF00C28F9B /* Images.xcassets in Resources */,
 				7705FF3218674FCF00C28F9B /* InfoPlist.strings in Resources */,
+				77F5AFD4186895C1001CD950 /* test.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +405,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSAttributedString-HTML/NSAttributedString+HTML-Prefix.pch";
 				INFOPLIST_FILE = "NSAttributedString-HTML/NSAttributedString+HTML-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "NSAttributedString+HTML";
 				WRAPPER_EXTENSION = app;
 			};
@@ -414,6 +419,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSAttributedString-HTML/NSAttributedString+HTML-Prefix.pch";
 				INFOPLIST_FILE = "NSAttributedString-HTML/NSAttributedString+HTML-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "NSAttributedString+HTML";
 				WRAPPER_EXTENSION = app;
 			};
@@ -480,6 +486,7 @@
 				7705FF5B18674FCF00C28F9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7705FF5C18674FCF00C28F9B /* Build configuration list for PBXNativeTarget "NSAttributedString+HTMLTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +495,7 @@
 				7705FF5E18674FCF00C28F9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
